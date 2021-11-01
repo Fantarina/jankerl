@@ -1,5 +1,5 @@
 {application, janken,
- [{description, "An OTP application"},
+ [{description, "Rock Paper Scissors in Erlang"},
   {vsn, "0.1.0"},
   {registered, []},
   {mod, {janken_app, [janken,janken_sup]}},
