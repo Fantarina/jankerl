@@ -29,7 +29,7 @@ init([]) ->
     SupFlags = #{strategy => one_for_all,
                  intensity => 0,
                  period => 1},
-    JankenSpecs= #{id=>janken,start => [],restart=>permanent,shutdown=>2000},
+    JankenSpecs= #{id=>janken,start=>{janken, start, []},restart=>permanent,shutdown=>2000},
     ChildSpecs = [JankenSpecs],
     {ok, {SupFlags, ChildSpecs}}.
 
